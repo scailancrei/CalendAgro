@@ -1,10 +1,9 @@
-import Animated, { useAnimatedStyle, interpolateColor, SharedValue } from 'react-native-reanimated';
+import Animated, { useAnimatedStyle, interpolateColor } from 'react-native-reanimated';
+import { useProgressContext } from 'components/context/useProgressContext';
 
-type MainBackgroundColorProps = {
-  progressValue: SharedValue<number>;
-};
+export const MainBackgroundColorAnimation = () => {
+  const { progressValue } = useProgressContext();
 
-export const MainBackgroundColor = ({ progressValue }: MainBackgroundColorProps) => {
   const animatedStyle = useAnimatedStyle(() => {
     const backgroundColor = interpolateColor(progressValue.value, [0, 1], ['#ffffff', '#4f6d7a']);
     return {

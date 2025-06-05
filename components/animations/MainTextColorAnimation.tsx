@@ -1,13 +1,14 @@
 import React from 'react';
-import { Text } from 'react-native';
-import Animated, { useAnimatedStyle, interpolateColor, SharedValue } from 'react-native-reanimated';
+import Animated, { useAnimatedStyle, interpolateColor } from 'react-native-reanimated';
+import { useProgressContext } from 'components/context/useProgressContext';
 
 type MainTextColorProps = {
-  progressValue: SharedValue<number>;
   children?: React.ReactNode;
 };
 
-export const MainTextColor = ({ progressValue, children }: MainTextColorProps) => {
+//Component to animate main text color based on progress value
+export const MainTextColorAnimation = ({ children }: MainTextColorProps) => {
+  const { progressValue } = useProgressContext();
   const animatedStyle = useAnimatedStyle(() => {
     const color = interpolateColor(progressValue.value, [0, 1], ['#4f6d7a', '#ffffff']);
     return {
