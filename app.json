@@ -1,26 +1,25 @@
 {
   "expo": {
-    "name": "CheckIn",
-    "slug": "CheckIn",
+    "name": "CalendAgro",
+    "slug": "CalendAgro",
+    "owner": "Juan Antonio Pérez Lores",
     "version": "1.0.0",
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/plant.png"
     },
     "experiments": {
       "tsconfigPaths": true
     },
     "plugins": [],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/plant.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/plant.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -29,8 +28,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.CheckIn"
+      "package": "com.anonymous.CalendAgro"
     },
+    "androidStatusBar": {
+      "backgroundColor": "#000000",
+      "barStyle": "dark-content"
+    },
+
     "extra": {
       "eas": {
         "projectId": "a2295686-530a-4039-b9e2-663563bed32b"

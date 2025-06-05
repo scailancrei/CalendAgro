@@ -1,7 +1,9 @@
 import { Text, View } from 'react-native';
 
-export const EditScreenInfo = () => {
-  const title = 'Bienvenido a AgroTech';
+type EditScreenInfoProps = {
+  title?: string;
+};
+export const EditScreenInfo = ({ title }: EditScreenInfoProps) => {
   const description =
     'Aqui podrás llevar el seguimiento de los trabajadores, los precios de las cosechas diarias etc.';
 
