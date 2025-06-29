@@ -1,21 +1,34 @@
 {
   "expo": {
     "name": "CalendAgro",
-    "slug": "CalendAgro",
-    "owner": "Juan Antonio Pérez Lores",
+    "slug": "CheckIn",
+    "owner": "scailancrei",
     "version": "1.0.0",
     "web": {
-      "favicon": "./assets/plant.png"
+      "favicon": "./assets/images/plant.png"
     },
     "experiments": {
       "tsconfigPaths": true
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#232323",
+          "image": "./assets/images/splash-icon.png",
+          "dark": {
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#000000"
+          },
+          "imageWidth": 200
+        }
+      ]
+    ],
     "orientation": "portrait",
-    "icon": "./assets/plant.png",
+    "icon": "./assets/images/plant.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/plant.png",
+      "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,16 +38,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/splash-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.CalendAgro"
     },
     "androidStatusBar": {
-      "backgroundColor": "#000000",
+      "backgroundColor": "#0A48A5",
       "barStyle": "dark-content"
     },
-
     "extra": {
       "eas": {
         "projectId": "a2295686-530a-4039-b9e2-663563bed32b"

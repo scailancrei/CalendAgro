@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as NavigationBar from 'expo-navigation-bar';
 import { useProgressContext } from 'components/context/useProgressContext';
@@ -20,17 +19,13 @@ export const NavigationBarAnimation = () => {
     };
   });
 
-  const [navigationBarStyle, setNavigationBarStyle] = useState<'light' | 'dark'>('light');
-
-  const updateNavigationBarStyle = async (style: 'light' | 'dark') => {
-    await NavigationBar.setButtonStyleAsync(style);
-    setNavigationBarStyle(style);
-    console.log('updateNavigationBarStyle', style);
+  const updateColorValueNavigationBar = (value: number) => {
+    const isLight = value > 0.5;
+    NavigationBar.setButtonStyleAsync(isLight ? 'light' : 'dark');
   };
 
   useDerivedValue(() => {
-    const newStyle = progressValue.value < 0.5 ? 'light' : 'dark';
-    runOnJS(updateNavigationBarStyle)(newStyle);
+    runOnJS(updateColorValueNavigationBar)(progressValue.value);
   });
 
   return (
@@ -39,10 +34,10 @@ export const NavigationBarAnimation = () => {
         style={[
           {
             position: 'absolute',
-            top: 0,
+            bottom: 0,
             left: 0,
             right: 0,
-            height: insets.top,
+            height: insets.bottom,
             zIndex: 10,
           },
           animatedStyle,
