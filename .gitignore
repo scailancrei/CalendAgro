@@ -1,24 +1,45 @@
+# Dependencias
 node_modules/
+
+# idea
+.idea/
+# Expo
 .expo/
 dist/
+web-build/
+
+# Carpetas nativas generadas por prebuild
 android/
-npm-debug.*
+ios/
+
+
+
+# Archivos de build compilados
+android/.gradle
+android/build
+android/app/build
+android/app/.cxx
+
+# Variables de entorno
+.env
+.env.local
+.env.production
+
+# Certificados y claves
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-web-build/
 
-
-
-
-ios
-android
+# npm
+npm-debug.*
 
 # macOS
 .DS_Store
 
-# Temporary files created by Metro to check the health of the file watcher
+# Metro
 .metro-health-check*
+
+# TypeScript
+*.orig.*

@@ -10,9 +10,15 @@ type ScreenContentProps = {
 
 export const MainScreen = ({ title }: ScreenContentProps) => {
   return (
-    <View className="flex-1 items-center">
+    <View className="flex-1 items-center justify-center">
       <MainBackgroundColorAnimation />
       <MainTextColorAnimation>{title}</MainTextColorAnimation>
+      <View className="">
+        <MainTextColorAnimation>
+          Aquí podrás llevar el seguimiento de los trabajadores, los precios de las cosechas
+          diarias, etc.
+        </MainTextColorAnimation>
+      </View>
     </View>
   );
 };
