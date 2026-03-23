@@ -3,6 +3,7 @@
     "newArchEnabled": true,
     "name": "CalendAgro",
     "slug": "CheckIn",
+    "scheme": "calendagro",
     "owner": "scailancrei",
     "version": "1.0.0",
     "web": {
