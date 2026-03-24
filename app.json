@@ -3,6 +3,7 @@
     "newArchEnabled": true,
     "name": "CalendAgro",
     "slug": "CheckIn",
+    "scheme": "calendagro",
     "owner": "scailancrei",
     "version": "1.0.0",
     "web": {
@@ -42,7 +43,7 @@
         "foregroundImage": "./assets/images/splash-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.CalendAgro"
+      "package": "com.calendagro.app"
     },
     "androidStatusBar": {
       "backgroundColor": "#0A48A5",
