@@ -6,9 +6,11 @@
 
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@app/*": ["app/*"],
-      "@assets/*": ["assets/*"]
+      "@components/*": ["src/components/*"],
+      "@app/*": ["src/app/*"],
+      "@assets/*": ["assets/*"],
+      "@features/*": ["src/features/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   }
 }
