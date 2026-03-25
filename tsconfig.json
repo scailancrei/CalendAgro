@@ -6,13 +6,11 @@
 
     "baseUrl": ".",
     "paths": {
-<<<<<<< Updated upstream
-      "~/*": ["src/*"]
-=======
       "@components/*": ["src/components/*"],
       "@app/*": ["src/app/*"],
-      "@assets/*": ["assets/*"]
->>>>>>> Stashed changes
+      "@assets/*": ["assets/*"],
+      "@features/*": ["src/features/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   }
 }
