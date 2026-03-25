@@ -5,6 +5,9 @@
     "slug": "CheckIn",
     "scheme": "calendagro",
     "owner": "scailancrei",
+    "router": {
+      "root": "src/app"
+    },
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/images/plant.png"
