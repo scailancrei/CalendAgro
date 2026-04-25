@@ -8,8 +8,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@app/*": ["src/app/*"],
+      "@screens/*": ["src/screens/*"],
       "@assets/*": ["assets/*"],
-      "@features/*": ["src/features/*"],
       "@hooks/*": ["src/hooks/*"]
     }
   }
