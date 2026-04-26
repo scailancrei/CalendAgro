@@ -1,5 +1,5 @@
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { ProgressContextProvider } from '@components/context/useProgressContext';
+import { ProgressContextProvider } from '@hooks/context/useProgressContext';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
 
 type ProvidersProps = {

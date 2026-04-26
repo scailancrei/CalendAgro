@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router';
-import { Providers } from '@components/providers/Providers';
+import { Providers } from '@hooks/providers/Providers';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../../global.css';
 
